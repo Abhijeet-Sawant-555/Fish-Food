@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
+/* font-family:Rubik Bubbles; */
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap");
+/* font-family: 'Rajdhani', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+/* font-family: 'Playball', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(164, 247, 164);
+}
+#panel {
+  overflow: hidden;
+  height: 80%;
+  width: 80%;
+  border-radius: 10px;
+  background-color: #fff;
+}
+#ptop {
+  width: 100%;
+  padding: 0px 30%;
+  display: flex;
+  color: #fff;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: rgb(72, 104, 72);
+}
+.boxText {
+  color: black;
+  padding: 10px;
+  font-weight: 600;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Rubik Bubbles;
+  color: black;
+  padding: 10px;
+  background-color: rgb(18, 119, 57);
+  font-size: 1.9rem;
+  border-radius: 50%;
+  height: 47px;
+  width: 47px;
+  margin: 10px;
+}
+.elem3 {
+  display: flex;
+  align-items: center;
+  width: 11.9vw;
+}
+#score {
+  font-family: Rubik Bubbles;
+  font-size: 1.3rem;
+}
+.elem {
+  display: flex;
+  align-items: center;
+}
+.elem3 h2 {
+  font-weight: 900;
+  font-size: 1.5rem;
+  font-family: "Rajdhani", sans-serif;
+}
+.elem h2 {
+  font-weight: 900;
+  font-size: 1.5rem;
+  font-family: "Rajdhani", sans-serif;
+}
+#pbtm {
+  border: solid red 1px;
+  background-image: url("https://i.pinimg.com/originals/e9/04/15/e904152f727d70e777066bd122c7f2dd.gif");
+  background-position: center;
+  display: flex;
+  background-repeat: no-repeat;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 100%;
+  height: calc(100% - 100px);
+  align-items: center;
+  background-size: cover;
+  justify-content: space-evenly;
+}
+.bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(72, 104, 72);
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 500;
+}
+.img img {
+  width: 31px;
+  height: 31px;
+  padding: 0.1rem;
+  border-radius: 50%;
+  background-color: #3498db;
+  animation: rotateAnimation 5s linear infinite;
+}
+.img img:hover {
+  cursor: pointer;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box:hover {
+  background-color: rgb(4, 168, 4);
+  cursor: pointer;
+}
+.big {
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+
+.elem5 {
+  background-image: linear-gradient(to top, #80b85a6c, rgb(0, 255, 0));
+  border-radius: 10px;
+  font-family: "Rajdhani", sans-serif;
+  width: 14vw;
+  display: flex;
+  font-weight: 900;
+  padding: 1.1rem;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.timer{
+  margin-top: 0.2rem;
+}
+
+.align {
+  margin-top: 0.4rem;
+  margin-left: 0.5rem;
+  display: flex;
+  font-size: 1.3rem;
+  align-items: center;
+  justify-content: center;
+}
+#randomNumber {
+  font-family: Rubik Bubbles;
+  font-weight: 100;
+  font-size: 1.5em;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://image.slidesdocs.com/responsive-images/background/fish-coral-sea-bottom-illustration-powerpoint-background_c464360c9f__960_540.jpg);
+  width: 35vw;
+  height: 35vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 35px;
+  background-size: cover;
+  position: absolute;
+  gap: 17px;
+  flex-direction: column;
+  color: #fff;
+  z-index: 999;
+}
+.none {
+  display: none;
+}
+.card p {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 2.6em;
+}
+.button button {
+  color: #fff;
+  padding: 0.6rem 1.9rem;
+  background-image: linear-gradient(to top, #e38812ad, rgb(255, 111, 0));
+  border: none;
+  border-radius: 12px;
+  font-family: Rubik Bubbles;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.button button:hover {
+  background-image: linear-gradient(to top, #42da06eb, #42da064f);
+  color: rgba(128, 128, 128, 0.687);
+}
+@media (max-width: 800px) {
+  .button button {
+    font-size: 0.9em;
+    padding: 0.6em 1vw;
+  }
+  .card {
+    width: 52vw;
+    height: 17vh;
+  }
+}
+@media (max-width: 400px) {
+  .button button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1vw;
+  }
+  .card {
+    width: 65vw;
+    height: 17vh;
+  }
+}
+
+.mix img {
+  background-color: transparent;
+  border: orange solid 3px;
+  border-radius: 50%;
+  width: 2.7vw;
+}
+
+.mix {
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.imgseting {
+  padding: 0.4rem;
+  border-radius: 10px;
+  padding-top: 0.8rem;
+  width: fit-content;
+}
+.imgseting:hover {
+  cursor: pointer;
+  background-color: orange;
+}
+
+@media (max-width: 817px) {
+  .elem5 {
+    flex-direction: column;
+  }
+  .align {
+    margin: 0;
+  }
+}
+.fisher {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  position: absolute;
+  width: fit-content;
+  top: 20vh;
+  border-radius: 50%;
+  left: 9vw;
+}
+.fish {
+  width: 8vw;
+  height: 11vh;
+  background-image: url(https://i.pinimg.com/originals/92/61/b3/9261b3445438ca96b8ecec445171704b.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+#halfTime h3{
+  padding: .8rem;
+  color:#000000;
+  font-weight: 500;
+  font-size: 2.2vw;
+  text-wrap: wrap;
+  text-align: center;
+  margin: .1rem 5rem 4rem 5rem;
+  border-radius: 25px;
+  background-image: linear-gradient(to top, #de3030c1, #ae3813b8);
+  font-family: "Rajdhani", sans-serif;
+}
+#halfTime img {
+  border-radius: 50%;
+  width: 7vw;
+  margin-top: 2.8rem;
+}
+#halfTime {
+  top: -50vh;
+  transition: 1.5s;
+}
+
+#winer {
+  display: none;
+  width: 28vw;
+  height: 30vh;
+  background-image: url('https://i.pinimg.com/236x/0f/be/8f/0fbe8f88980f649d10c9745cb5714ab6.jpg');
+}
+.win{
+  font-family: "Rajdhani", sans-serif;
+}
+#winer h3{
+  color:#ff0404;
+  font-weight: 500;
+  font-size: 3.1em;
+  text-wrap: wrap;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 25px;
+  background-image: linear-gradient(to top, #42da06eb, #0b4e0db8);
+
+}
+#timeOver{
+  display: none;
+}
+#timeOver img{
+  border-radius: 40%;
+  width: 8vw;
+  height: 17vh;
+  margin-top:5rem;
+  margin-bottom: 1.2rem;
+}
+#timeOver h3{
+  padding: .8rem;
+  color:#000000;
+  font-weight: 500;
+  font-size: 2.2vw;
+  text-wrap: wrap;
+  text-align: center;
+  margin: -1rem 5rem 4rem 5rem;
+  border-radius: 25px;
+  background-image: linear-gradient(to top, #de3030c1, #ae3813b8);
+
+}
+.food span{
+  font-size: 1.3rem;
+  }
+
+@media (max-width: 1100px) {
+  .fish {
+    width: 16vw;
+    height: 10vh;
+  }
+  .fisher {
+    top: 22vh;
+    left: 8vw;
+  }
+}
+@media (max-width: 450px) {
+  .fish {
+    width: 18vw;
+    height: 7vh;
+  }
+  .fisher {
+    top: 20vh;
+    left: 7vw;
+  }
+  #halfTime h3 {
+    font-size: 1.1rem;
+  }
+  #timeOver h3{
+    font-size: 3.5vw;
+    margin: -2rem 5rem 3rem 5rem;
+    border-radius: 25px;
+    width: 41vw;
+  }
+  #timeOver img{
+    border-radius: 40%;
+    width: 11vw;
+    margin-top: 50px;
+  }
+  #halfTime h3{
+    font-size: 3.5vw;
+    margin: 0rem 5rem 3rem 5rem;
+    border-radius: 25px;
+    width: 41vw;
+  }
+
+}
